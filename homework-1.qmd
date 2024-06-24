@@ -51,6 +51,8 @@ The following values are found when we summarise the variables in the **mtcars**
 summary(mtcars)
 ```
 
+There are 11 variables in the dataset and all of them are numerical variables.
+
 ## Plot
 
 We can plot the variables **mpg** and **hp** to check what kind of relation they have.
@@ -59,7 +61,7 @@ We can plot the variables **mpg** and **hp** to check what kind of relation they
 #| label: plot-mtcars
 #| echo: false
 #Scatter plot of mpg vs hp
-plot(mtcars$mpg, mtcars$hp, main = 'MPG vs HP', col = 'red',
+plot(mtcars$mpg, mtcars$hp, main = 'MPG vs HP', col = 'blue',
      xlab = 'Miles per gallon', ylab = 'Horsepower')
 ```
 
