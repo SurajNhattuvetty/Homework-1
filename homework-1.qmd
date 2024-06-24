@@ -1,0 +1,66 @@
+---
+title: "Homework 1"
+author: "Suraj Bodhanandan Nhattuvetty - 23200338"
+format: 
+  pdf: 
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+    colorlinks: true
+editor: visual
+---
+
+# Introduction
+
+The dataset being examined is the built-in dataset **mtcars**. The dataset contains variables which are based on the design and performance of different cars.
+
+```{r}
+#| label: head-mtcars
+#| echo: false
+#Overview of dataset
+head(mtcars)
+```
+
+# Analysis
+
+Below a quick summary of the variables and a plot to check the relationship between two variables can be found
+
+## Summary of Variables
+
+The following values are found when we summarise the variables in the **mtcars** dataset:
+
+-   Minimum
+
+-   1^st^ Quantile
+
+-   Median
+
+-   Mean
+
+-   3^rd^ Quantile
+
+-   Maximum
+
+{{< pagebreak >}}
+
+```{r}
+#| label: summary-mtcars
+#| echo: false
+#Summarise the mtcars dataset
+summary(mtcars)
+```
+
+## Plot
+
+We can plot the variables **mpg** and **hp** to check what kind of relation they have.
+
+```{r}
+#| label: plot-mtcars
+#| echo: false
+#Scatter plot of mpg vs hp
+plot(mtcars$mpg, mtcars$hp, main = 'MPG vs HP', col = 'red',
+     xlab = 'Miles per gallon', ylab = 'Horsepower')
+```
+
+From the plot, it can be seen that there is a negative relationship between **mpg** and **hp**. As horsepower increases the miles per gallon for the car decreases.
